@@ -4,11 +4,7 @@ var productSchema = mongoose.Schema({
   name: String,
   price: String,
   description: String,
-  rating{
-    type: String,
-    min = 0,
-    max = 5
-  },
+  rating:String
 });
 const Product = mongoose.model("Product", productSchema);
 module.exports = Product;
