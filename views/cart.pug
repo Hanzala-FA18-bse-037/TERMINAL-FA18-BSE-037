@@ -7,15 +7,17 @@ block content
       thead
         th Name
         th Price
-        th Actions
         th Description 
         th Rating
+        th Actions
       tbody
         each item in cart
           - total += Number(item.price)
           tr
             td=item.name
             td=item.price
+            td=item.description 
+            td=item.rating
             td
               a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
       tfoot
