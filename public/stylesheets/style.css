@@ -1,8 +1,65 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 1px;
 }
 
-a {
-  color: #00B7FF;
+.btn{
+  font-size: 13px;
+
+}
+
+.navbar{
+  width: 100%;
+  background-color: rgb(129, 151, 5) !important;
+  margin-bottom: 3em;
+}
+
+.fa{
+  font-size: 1.3em;
+  color: rgb(129, 151, 5);
+  margin-right: 2px;
+  font-weight: 900;
+}
+
+.checked{
+  color: rgb(129, 151, 5);
+}
+
+table th{
+  background-color: rgb(129, 151, 5);
+  color: white;
+}
+table{
+  margin-top: 2em;
+}
+
+.body{
+  padding: 2em;
+}
+
+.btn{
+  background-color: rgb(76, 10, 82) !important;
+  color: white !important;
+  border: 1px solid rgb(76, 10, 82) !important;
+  margin-right: 1em;
+  padding: 0.3em 3em;
+}
+
+.btn:hover{
+  background-color: rgb(129, 151, 5) !important;
+  color: white !important;
+  border: 1px solid rgb(129, 151, 5) !important;
+}
+
+.nav-item{
+  color: white;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  margin-right: 2em;
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+  color: rgb(26, 1, 1) !important;
 }

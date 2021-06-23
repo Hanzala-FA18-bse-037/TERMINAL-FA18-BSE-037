@@ -5,9 +5,15 @@ block content
     form(action="/products/add",method="post")
         .form-group
             label(for="name") Product Name
-            input#name(type="text", class="form-control", name="name")
+            input#name(type="text", class="form-control", name="name", required)
         .form-group
             label(for="price") Product Price
-            input#price(type="text", class="form-control", name="price")
+            input#price(type="number", class="form-control", name="price", required)
+        .form-group
+            label(for="rating") Product Description
+            input#rating(type="text", class="form-control", name="description", required)
+        .form-group
+                label(for="rating") Product Rating
+                input#rating(type="number", min="0", max="5", class="form-control", name="rating" step="0.1", required)
         input(type="submit", class="btn btn-info")
     

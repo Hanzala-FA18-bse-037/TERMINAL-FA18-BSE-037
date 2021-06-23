@@ -19,12 +19,12 @@ router.post("/login", async function (req, res, next) {
   });
   if (!user) return res.redirect("/login");
   req.session.user = user;
-  return res.redirect("/");
+  return res.redirect("/products");
 });
 router.post("/register", async function (req, res, next) {
   let user = new User(req.body);
   await user.save();
-  res.redirect("/");
+  res.redirect("/products");
 });
 
 module.exports = router;

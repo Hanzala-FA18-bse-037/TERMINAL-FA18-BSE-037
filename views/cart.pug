@@ -17,7 +17,43 @@ block content
             td=item.name
             td=item.price
             td=item.description 
-            td=item.rating
+            td 
+              if item.rating > 0
+                  if item.rating > 0.5
+                      span(class="fa fa-star checked")
+                  else if item.rating > 0
+                      span(class="fa fa-star-half-o checked")
+              else 
+                  span(class="fa fa-star-o ")
+              if item.rating>1
+                  if item.rating > 1.5
+                      span(class="fa fa-star checked")
+                  else if item.rating > 1
+                      span(class="fa fa-star-half-o checked")
+              else 
+                  span(class="fa fa-star-o ")
+              if item.rating>2
+                  if item.rating > 2.5
+                      span(class="fa fa-star checked")
+                  else if item.rating > 2
+                      span(class="fa fa-star-half-o checked")
+              else 
+                  span(class="fa fa-star-o ")
+              if item.rating>3
+                  if item.rating > 3.5
+                      span(class="fa fa-star checked")
+                  else if item.rating > 3
+                      span(class="fa fa-star-half-o checked")
+              else 
+                  span(class="fa fa-star-o")
+              if item.rating > 4
+                  if item.rating > 4.5
+                      span(class="fa fa-star checked")
+                  else if item.rating > 4
+                      span(class="fa fa-star-half-o checked")
+              else 
+                  span(class="fa fa-star-o")
+                                
             td
               a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
       tfoot
